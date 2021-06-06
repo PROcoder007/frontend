@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import { MyForm } from "./Myform"
+import Found from "./Found"
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import NotFound from "./NotFound";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path='/' component={MyForm}></Route>
+          <Route exact path='/found' component={Found} ></Route>
+          <Route exact path='/notfound' component={NotFound} ></Route>
+          <Route render={() => <h1>404: page not found</h1>} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
