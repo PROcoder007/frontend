@@ -1,9 +1,6 @@
-## Getting Started with Create React App
+#frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
+## setup oroject
 In the project directory, you can run:
 npm install
 npm start
