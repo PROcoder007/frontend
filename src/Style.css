@@ -11,7 +11,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #24cfaa;
+  background: #45b9ee;
   min-height: 100vh;
 }
 
@@ -27,8 +27,8 @@ section::before {
 
 .container {
   position: relative;
-  min-height: 650px;
-  min-width: 1300px;
+  min-height: 550px;
+  min-width: 1100px;
   display: flex;
   z-index: 1000;
 }
@@ -42,7 +42,7 @@ section::before {
   justify-content: center;
   align-items: center;
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
-  background: #24cfaa;
+  background: #45b9ee;
   transform: skewY(-15deg);
 }
 
@@ -73,7 +73,7 @@ section::before {
 }
 
 .container .show .items img {
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
   height: 100%;
   filter: invert(1);
@@ -113,20 +113,20 @@ section::before {
   resize: none;
   border: none;
   outline: none;
-  color: #333;
+  color: #45b9ee;
   font-size: 18px;
-  font-weight: 50;
+  font-weight: 550;
   padding: 5px 0;
-  border-bottom: 1px solid #24cfaa;
+  border-bottom: 1px solid #45b9ee;
 }
 
 .container .contactForm .formBox .inputBox span {
   position: absolute;
   left: 0%;
-  font-weight: 50;
+  font-weight: 550;
   padding: 5px 0;
   pointer-events: none;
-  color: #24cfaa;
+  color: #45b9ee;
   font-size: 20px;
   transition: 0.3s;
 }
@@ -138,149 +138,106 @@ section::before {
   transform: translateY(-20px);
   font-size: 10px;
   letter-spacing: 1px;
-  color: #24cfaa;
+  color: #45b9ee;
+  font-weight: 550;
+}
+#r1r2 {
+  display: flex;
 }
 
 #r1r2 input {
-  width: 10%;
+  width: 50%;
+}
+#r1r2 label {
+  position: relative;
+  top: -0.8rem;
+  left: -2rem;
+  color: #45b9ee;
+  font-weight: 550;
+  font-size: 1.5em;
 }
 
-.container.container .formBox .inputBox input[type="submit"] {
+.container .formBox .inputBox input[type="submit"] {
   cursor: pointer;
   position: relative;
-  background: #24cfaa;
+  background: #45b9ee;
   color: #fff;
   border: none;
   max-width: 150px;
   padding: 8px;
+  font-weight: 550;
 }
 
-.container.container .formBox .inputBox input[type="submit"]:hover {
-  background: #44c7ab;
+.container .formBox .inputBox input[type="submit"] {
+  position: relative;
+  left: 30rem;
 }
 
-.container.container .formBox .inputBox input[type="file"] {
+.container .formBox .inputBox input[type="submit"]:hover {
+  background: #6cc1e9;
+}
+
+.container .formBox .inputBox input[type="file"] {
+  /* cursor: pointer; */
+  position: relative;
+  /* top: 5rem; */
+  /* left: -20rem; */
+  height: 3rem;
+  width: 5rem;
   display: none;
 }
 
 #upload {
+  position: relative;
   height: 30px;
   width: 200px;
-  background: #24cfaa;
+  background: #45b9ee;
   color: #fff;
   font-size: 15px;
   padding: 15px;
-  font-weight: 50;
+  font-weight: 550;
+  /* top: 4.5rem;
+  left: -20rem; */
+  cursor: pointer;
 }
 
-.NoFoundBox {
-  background: #24cfaa;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#upload:hover {
+  background: #6cc1e9;
 }
 
-.NoFoundBox::before {
-  content: "";
+.nav-section {
+  width: 100%;
+  height: 2rem;
+  /* background-color:white; */
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: #333;
+  z-index: 12;
 }
 
-.NoFoundBox .messageBox {
-  background: #fff;
-  position: absolute;
-  width: 250px;
-  min-height: 350px;
-  padding: 50px;
-  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+.nav-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.matched {
-  background: #24cfaa;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-}
-.matched::before {
-  content: "";
-  background: #333;
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-right: 1.5rem;
 }
 
-.matched h1 {
-  position: absolute;
-  color: #fff;
-  letter-spacing: 1.8em;
-  top: 6vh;
-}
-
-.matched .info {
-  position: absolute;
-  background: #fff;
-  width: 350px;
-  min-height: 400px;
-  border-radius: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25);
-}
-.matched .info div {
-  width: 80%;
-  height: 50px;
-  margin: 30px;
-  padding: 10px;
-}
-
-.matched .info div h2 {
-  text-align: center;
-  color: #24cfaa;
-  font-weight: 50;
-  border: none;
-  border-bottom: 1px solid #24cfaa;
-}
-
-.matched .info div span {
-  color: #24cfaa;
-  font-weight: 50;
-  position: relative;
-  top: -60px;
-  font-size: 15px;
-}
-
-.matched .info .btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.matched .info .btn div{
-  background:#24cfaa;
-  border-radius:30%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.matched .info .btn div a{
-  text-decoration:none;
+.home,
+.lost-people {
   color:#fff;
-  font-weight:1000;
-  font-size:30px;
+  text-decoration:none;
+  padding:.5rem;
+  margin-top: 0.1rem;
+  margin-right: 1rem;
+  display: block;
+  background-color:transparent;
+  transition: background-color 150ms; 
+  cursor:pointer;
 }
+.home:hover,.lost-people:hover{
+  background-color:rgba(255,255,255,0.3);
+}
+
+/* .home,
+.lost-people {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+} */
